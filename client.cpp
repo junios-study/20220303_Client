@@ -32,7 +32,7 @@ int main()
 	while (1)
 	{
 		int recvLength = recv(ServerSocket, Buffer, 2048, 0);
-		if (recvLength == 0)
+		if (recvLength == 0) //close
 		{
 			break;
 		}
